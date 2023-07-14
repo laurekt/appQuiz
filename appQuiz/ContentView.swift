@@ -10,14 +10,32 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            NavigationStack {
+                VStack {
+                    
+                    Text("sun, star, moon quiz!!☀️🌙💫 ")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                        .padding(50)
+                    
+                    NavigationLink(destination: QuizOne()) {
+                        Text("start here :9")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            
+                    }
+                    
+                    
+                }
+            }
+            
+            
+            
+            
+            }
         }
-        .padding()
     }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
